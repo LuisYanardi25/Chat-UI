@@ -4,6 +4,22 @@
   width: auto;
   height: auto;
 }
+:root{
+  --bg: #f3f5f8;
+  --panel: #ffffff;
+  --border: #e6e8ec;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --brand: #3b82f6; /* azul claro */
+  --brand-weak: #e8f1ff;
+  --sent: #e8f1ff;     /* burbuja enviada */
+  --received: #f5f6f8; /* burbuja recibida */
+  --success: #22c55e;
+  --danger: #ef4444;
+  --shadow: 0 6px 20px rgba(22, 30, 46, 0.06);
+  --radius: 16px;
+}
+
 
 body {
   margin: 0;
