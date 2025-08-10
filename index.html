@@ -10,29 +10,47 @@
   <title>Chat UI</title>
 </head>
 <body>
-  <div class="cotainer">
+  <main class="container" role="main">
     <aside class="chat-container">
-       <div class="contact_search">
-        <label class="searchbox" aria-label="Buscar contacto"></label>
-        <input type="search" placeholder="Search..." aria-label="">
-       </div>
+      <div class="contact_search">
+        <input type="search" placeholder="Search..." class="searchbox">
+      </div>
        
     <ul class="contact_list">
-     <li class="contact active" tabindex="0">
+      <li class="contact active" tabindex="0">
           <img class="avatar" src="assets/avatar.svg" alt="Avatar de Vincent Porter" />
-          <div class="contact__meta">
-            <div class="contact__name">Vincent Porter</div>
-            <div class="contact__status">
+          <div class="contact_meta">
+            <div class="contact_name">Vincent Porter</div>
+            <div class="contact_status">
               <span class="dot online" aria-hidden="true">
               </span> online</div>
           </div>
-          <div class="contact__info">left 10 min ago</div>
+          <div class="contact_info">left 10 min ago</div>
       </li>
-      
+      <li class="contact active" tabindex="0">
+          <img class="avatar" src="assets/avatar.svg" alt="Avatar de Vincent Porter" />
+          <div class="contact_meta">
+            <div class="contact_name">Vincent Porter</div>
+            <div class="contact_status">
+              <span class="dot online" aria-hidden="true">
+              </span> online</div>
+          </div>
+          <div class="contact_info">left 10 min ago</div>
+      </li>
+      <li class="contact active" tabindex="0">
+          <img class="avatar" src="assets/avatar.svg" alt="Avatar de Vincent Porter" />
+          <div class="contact_meta">
+            <div class="contact_name">Vincent Porter</div>
+            <div class="contact_status">
+              <span class="dot online" aria-hidden="true">
+              </span> online</div>
+          </div>
+          <div class="contact_info">left 10 min ago</div>
+      </li>
     </ul>   
         
     
-      </aside>
+    </aside>
     
     <section class="chat-section">
       <header class="chat-header">
@@ -47,6 +65,6 @@
 
       </footer>
     </section>
-  </div>
+  </main>
 </body>
 </html>

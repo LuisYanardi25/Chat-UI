@@ -1,9 +1,14 @@
 *{ box-sizing: border-box; }
+
 .container{
-  background: white;
-  width: auto;
-  height: auto;
+  display: flex;
+  height: 100svh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  gap: 16px;
 }
+
 :root{
   --bg: #f3f5f8;
   --panel: #ffffff;
@@ -27,6 +32,25 @@ body {
   color: var(--text);
   background: linear-gradient(180deg, #eef2f7 0%, #f7f9fc 100%);
 }
+.searchbox{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8PX;
+  padding: 10px 14px;
+}
+
+.searchbox input[type="search"]{
+  border: 0;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  background: transparent;
+  color: var(--text);
+}
+
 
 .dot{ width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
 .online{ background: var(--success); }
@@ -47,50 +71,32 @@ body {
 .chats{
   display: grid;
 }
- aside.contacts{
-      flex: 0 0 320px;
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-}
 
- .searchbox{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: #fff;
+aside.contacts{
+  flex: 0 0 320px;
+  background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 10px 14px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.searchbox input[type="search"]{
-  border: 0;
-  outline: none;
-  width: 100%;
-  font-size: 14px;
-  background: transparent;
-  color: var(--text);
-}
-
-.contacts__search{
+.contact_search{
       padding: 12px;
       border-bottom: 1px solid var(--border);
       background: #fafbfc;
 }
 
-.contact__meta{
+.contact_meta{
     display: flex; 
     flex-direction: column; 
     gap: 4px; 
     min-width: 0;
 }
 
- .contact__name{
+ .contact_name{
     font-size: 15px; 
     font-weight: 600; 
     white-space: nowrap; 
@@ -98,14 +104,20 @@ body {
     text-overflow: ellipsis;
 }
 
-.contact-status{
+.contact_status{
   font-size: 12px; 
   color: var(--muted);
   display: flex; 
   align-items: center; gap: 8px;
 }
+.contact_list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
 
-.contact__info{
+.contact_info{
   font-size: 12px;
   color:var(--muted);
 }
