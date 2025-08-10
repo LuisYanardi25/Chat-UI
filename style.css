@@ -1,9 +1,21 @@
+*{ box-sizing: border-box; }
 .container{
   background: white;
   width: auto;
   height: auto;
-  font-family: 'Roboto';
 }
+
+body {
+  margin: 0;
+  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: linear-gradient(180deg, #eef2f7 0%, #f7f9fc 100%);
+}
+
+.dot{ width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.online{ background: var(--success); }
+.offline{ background: #9ca3af; }
+.away{ background: #f59e0b; }
 
 .chat-container{
   display: flex;
@@ -15,4 +27,27 @@
 }
 .chats{
   display: grid;
+}
+ aside.contacts{
+      flex: 0 0 320px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+}
+
+.contacts__search{
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+      background: #fafbfc;
+}
+
+.contact__meta{
+    display: flex; 
+    flex-direction: column; 
+    gap: 4px; 
+    min-width: 0;
 }

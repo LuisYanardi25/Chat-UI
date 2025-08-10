@@ -12,17 +12,27 @@
 <body>
   <div class="cotainer">
     <aside class="chat-container">
-       <div>
-        <input type="search" placeholder="Search...">
+       <div class="contact_search">
+        <label class="searchbox" aria-label="Buscar contacto"></label>
+        <input type="search" placeholder="Search..." aria-label="">
        </div>
-       <div>
-          <div>
-            <img class="avatar" src="assets\avatar.svg">
-            <h1>Vicent Porter</h1>
-            <p>desconectado hace 7 minutos</p>
+       
+    <ul class="contact_list">
+     <li class="contact active" tabindex="0">
+          <img class="avatar" src="assets/avatar.svg" alt="Avatar de Vincent Porter" />
+          <div class="contact__meta">
+            <div class="contact__name">Vincent Porter</div>
+            <div class="contact__status">
+              <span class="dot online" aria-hidden="true">
+              </span> online</div>
           </div>
-       </div>
-    </aside>
+          <div class="contact__info">left 10 min ago</div>
+      </li>
+      
+    </ul>   
+        
+    
+      </aside>
     
     <section class="chat-section">
       <header class="chat-header">
