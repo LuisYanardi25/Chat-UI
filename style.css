@@ -154,3 +154,12 @@ section.chat{
   border-bottom: 1px solid var(--border);
   background: #fafbfc;
 }
+
+.chat_title{
+  font-weight: bold;
+}
+
+.chat_subtitle{
+  font-size:12px;
+  color: var(--muted);
+}
