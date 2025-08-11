@@ -142,11 +142,11 @@ section.chat{
   min-width: 0;
 }
 
-.chat-container{
+.chat_container{
   background: var(--panel);
 }
 
-.chat-header{
+.chat_header{
   display: flex; 
   align-items: center; 
   gap: 12px;
@@ -168,7 +168,9 @@ section.chat{
   flex: 1 1 auto;
   padding: 18px 16px 0;
   overflow: auto;
-  display: flex; flex-direction: column; gap: 14px;
+  display: flex; 
+  flex-direction: column; 
+  gap: 14px;
   background:#3b82f60f;
 }
 
@@ -177,19 +179,21 @@ section.chat{
   display: grid;
   gap: 6px;
 }
-.msg.in{
+.msg .in{
   align-self: flex-start;
 }
 
-.msg.bubble{
+.msg .bubble{
   padding: 10px 12px;
   border-radius: 14px;
   border: 1px solid var(--border);
   line-height: 1.35;
-  word-wrap: break-word; word-break: break-word;
+  word-wrap: break-word; 
+  word-break: break-word;
   box-shadow: 0 2px 6px rgba(17, 24, 39, .04);
   font-size: 14px;
 }
+
 .msg.in .bubble{ background: var(--received); }
 .msg.out{ align-self: flex-end; text-align: right; }
 .msg.out .bubble{ background: var(--sent); border-color:#dce7ff; }
