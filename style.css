@@ -163,3 +163,35 @@ section.chat{
   font-size:12px;
   color: var(--muted);
 }
+
+.chat_body{
+  flex: 1 1 auto;
+  padding: 18px 16px 0;
+  overflow: auto;
+  display: flex; flex-direction: column; gap: 14px;
+  background:#3b82f60f;
+}
+
+.msg{
+  max-width: min(70%, 540px);
+  display: grid;
+  gap: 6px;
+}
+.msg.in{
+  align-self: flex-start;
+}
+
+.msg.bubble{
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  line-height: 1.35;
+  word-wrap: break-word; word-break: break-word;
+  box-shadow: 0 2px 6px rgba(17, 24, 39, .04);
+  font-size: 14px;
+}
+.msg.in .bubble{ background: var(--received); }
+.msg.out{ align-self: flex-end; text-align: right; }
+.msg.out .bubble{ background: var(--sent); border-color:#dce7ff; }
+
+.meta{ font-size: 11px; color: var(--muted); }
