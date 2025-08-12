@@ -14,7 +14,7 @@
     <aside class="chat_container">
       
       <div class="contact_search">
-        <input type="search" placeholder="Search..." class="searchbox">
+        <input type="search" placeholder="Search..." class="searchbox"/>
       </div>
        
     <ul class="contact_list">
@@ -65,27 +65,32 @@
       <div class="chat_body">
         <article class="msg in" aria-label="Mensaje recibido">
           <div class="bubble">Hola Luis! Como va ese TP?</div>
-          <div class="meta">21:30 hs, Today</div>
+          <div class="meta">09:30 hs, Today</div>
         </article>
 
         <article class="msg out" aria-label="Mensaje enviado">
           <div class="bubble">Hola, Aiden!. Avanzando con la UI. Panel, lista y burbujas listos.</div>
-          <div class="meta">09:33</div>
+          <div class="meta">09:33, Today</div>
         </article>
 
          <article class="msg in">
           <div class="bubble">Perfecto. Acordate del responsive y los estilos diferenciados</div>
-          <div class="meta">09:34</div>
+          <div class="meta">09:34, Today</div>
         </article>
 
         <article class="msg out">
           <div class="bubble">Sí, y también agrego el estado "escribiendo..." y etiquetas semánticas.</div>
-          <div class="meta">09:35</div>
+          <div class="meta">09:35, Today</div>
         </article>
       </div>
 
-      <footer class="chat-input">
-
+      <footer class="chat_footer">
+        <form class="composer">
+          <input type="text" id="chat_footer" placeholder="Enter text here...">
+          <button  class="sendbtn">
+            <img class="plane" src="assets/plane.svg" alt="plane"/>
+          </button>
+        </form>
       </footer>
     </section>
   </main>

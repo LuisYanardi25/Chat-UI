@@ -14,7 +14,7 @@
   --border: #e6e8ec;
   --text: #1f2937;
   --muted: #6b7280;
-  --brand: #3b82f6; /* azul claro */
+  --brand: #4ef8a9; /* azul claro */
   --brand-weak: #e8f1ff;
   --sent: #e8f1ff;     /* burbuja enviada */
   --received: #f5f6f8; /* burbuja recibida */
@@ -199,3 +199,35 @@ section.chat{
 .msg.out .bubble{ background: var(--sent); border-color:#dce7ff; }
 
 .meta{ font-size: 11px; color: var(--muted); }
+
+
+/**Ingreso de chat**/
+
+.plane{
+  width: 30px;
+  height: 30px;
+}
+
+.chat_footer{
+  padding: 12px;
+  border-top: 1px solid var(--border);
+  background: #fafbfc;
+}
+
+.composer{
+  display: flex; 
+  align-items: center; 
+  gap: 10px;
+  padding: 10px 12px;
+}
+ 
+.composer input[type="text"]{
+  border: 0; outline: none; flex: 1; font-size: 14px; background: var(--bg); color: var(--text); height: 50px; border-radius: 14px; padding-left: 20px;
+}
+
+.sendbtn{
+  border: 0; color: #fff; border-radius: 14px; padding: 10px 14px; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; box-shadow: 0 4px 14px rgba(59,130,246,.25);
+  transition: transform .08s ease, box-shadow .2s ease;
+}
+.sendbtn:active{ transform: translateY(1px); box-shadow: 0 2px 8px rgba(59,130,246,.25); }
+.sendbtn svg{ width: 18px; height: 18px; }
