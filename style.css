@@ -38,6 +38,7 @@ body {
   border: 1px solid var(--border);
   border-radius: 8PX;
   padding: 10px 14px;
+  width: 100%;
 }
 
 .searchbox input[type="search"]{
@@ -93,11 +94,6 @@ aside.contacts{
   margin: 0;
   padding: 0;
   overflow: auto;
-}
-
-.contact_info{
-  font-size: 12px;
-  color:var(--muted);
 }
 
 .contact{
@@ -249,3 +245,20 @@ section.chat{
 }
 .sendbtn:active{ transform: translateY(1px); box-shadow: 0 2px 8px rgba(59,130,246,.25); }
 .sendbtn svg{ width: 18px; height: 18px; }
+
+
+/**RESPONSIVE**/
+@media (max-width: 900px){
+  .container{ flex-direction: column; }
+  aside.contacts{ flex-basis: auto; }
+  .chat_container{height: 50%; border-radius: 12px; overflow-y: scroll; }
+}
+
+@media (max-width: 640px){
+  .container{ padding: 8px; gap: 8px; }
+  aside.contacts{ border-radius: 12px; }
+  section.chat{ border-radius: 12px; }
+  .contact{ grid-template-columns: 40px 1fr auto; }
+  .avatar{ width: 40px; height: 40px; }
+  .chat_container{overflow-y: scroll; }
+}
