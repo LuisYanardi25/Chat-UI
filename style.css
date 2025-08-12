@@ -5,7 +5,6 @@
   height: 100svh;
   width: auto;
   margin: 0 auto;
-  gap: 16px;
 }
 
 :root{
@@ -137,7 +136,6 @@ section.chat{
   flex-direction: column;
   background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
   box-shadow: var(--shadow);
   overflow: hidden;
   min-width: 0;
@@ -154,6 +152,25 @@ section.chat{
   padding: 14px 16px;
   border-bottom: 1px solid var(--border);
   background: #fafbfc;
+  justify-content: space-between;
+}
+
+.chat_header_icon{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chat_header_icon img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.chat_info_status{
+  display: flex;
+  align-items: center;
+  gap:10px;
 }
 
 .chat_title{
@@ -161,7 +178,7 @@ section.chat{
 }
 
 .chat_subtitle{
-  font-size:12px;
+  font-size:14px;
   color: var(--muted);
 }
 
